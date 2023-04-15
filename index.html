@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Custom Bracelet</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700'" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Build Your Own Bracelet" />
+	<link type="text/css" href="css/ui/ui.all.css" rel="stylesheet" />
+</head>
+
+<body id="category" class="NDN">
+	<hr class="hide" />
+	<br><br>
+	<div id="wrapper">
+		<hr class="hide" />
+		<div id="ocwrapper" class="clear">
+			<div id="icwrapper" class="clear">
+				<div id="contentwrapper" class="shadowleft">
+					<div class="shadowright">
+						<div id="content">
+							<br>
+							<h2>
+								Build Your Own Bracelet
+							</h2>
+							<div id="category-description" class="clear">
+								Design your own Bracelet
+							</div>
+							<div id="results">
+								<span id="rope-result">no rope</span>
+								<span id="select-result">no selections</span>
+								<span id="clasp-result">no clasp</span>
+							</div>
+							<div id="collector">
+								<ul id="clasptableleft" class="noclaspleft"></ul>
+								<ul id="ropetable" class="norope"></ul>
+								<ul id="sortable" class="receiver"></ul>
+								<ul id="clasptable" class="noclasp"></ul>
+							</div>
+							<br clear="all" />
+							<div id="byobcontent">
+								<div id="beadandwristwrapper">
+									<div id="ropeandclaspwrapper">
+										<div id="claspwrapper">
+											<h4 class="claspheader">1. Choose Hook</h4>
+											<ul id="claspchoice" class="chooser">
+												<li id="prop13" class="clasp-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Clasp:T-Clasp" /><a href="#"
+														onclick="changeidclass('clasptable','tclasp');changeidclass('clasptableleft','tclaspleft'); insertresult('prop13','clasp-result','byob_prop2','Clasp:T-Clasp'); return false;"><img
+															src="images/hooks/T-Clasp_right.png" width="102" height="60"
+															alt="T-Clasp" title="T-Clasp" /></a></li>
+												<li id="prop14" class="clasp-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Clasp:Hook Clasp" /><a href="#"
+														onclick="changeidclass('clasptable','hookclasp'); changeidclass('clasptableleft','hookclaspleft'); insertresult('prop14','clasp-result','byob_prop2','Clasp:Hook Clasp'); return false;"><img
+															src="images/hooks/Hook_clasp_right.png" width="94"
+															height="60" alt="Hook Clasp" title="Hook Clasp" /></a></li>
+												<li id="prop15" class="clasp-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Clasp:Coil Clasp" /><a href="#"
+														onclick="changeidclass('clasptable','coilclasp'); changeidclass('clasptableleft','coilclaspleft'); insertresult('prop15','clasp-result','byob_prop2','Clasp:Coil Clasp'); return false;"><img
+															src="images/hooks/Coil_clasp_right.png" width="100"
+															height="60" alt="Coil Clasp" title="Coil Clasp" /></a></li>
+											</ul>
+										</div>
+										<div id="ropewrapper">
+											<h4 class="ropeheader"><span class="byob-fullscreen">3</span><span
+													class="byob-mobile">2</span>. Choose Rope</h4>
+											<ul id="ropechoice" class="chooser">
+												<li id="prop10" class="rope-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Rope:A" /><a href="#"
+														onclick="changeidclass('ropetable','A'); insertresult('prop1','rope-result','byob_prop1','Rope:A'); return false;"><span
+															class="ropeoverlay">A</span><img
+															src="images/ropes/rope_a.jpg" width="470" height="60"
+															alt="rope a" /></a></li>
+												<li id="prop7" class="rope-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Rope:B" /><a href="#"
+														onclick="changeidclass('ropetable','B'); insertresult('prop1','rope-result','byob_prop1','Rope:B'); return false;"><span
+															class="ropeoverlay">B</span><img
+															src="images/ropes/rope_b.jpg" width="470" height="60"
+															alt="rope b" /></a></li>
+												<li id="prop8" class="rope-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Rope:C" /><a href="#"
+														onclick="changeidclass('ropetable','C'); insertresult('prop1','rope-result','byob_prop1','Rope:C'); return false;"><span
+															class="ropeoverlay">C</span><img
+															src="images/ropes/rope_c.jpg" width="470" height="60"
+															alt="rope c" /></a></li>
+												<li id="prop2" class="rope-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Rope:D" /><a href="#"
+														onclick="changeidclass('ropetable','D'); insertresult('prop1','rope-result','byob_prop1','Rope:D'); return false;"><span
+															class="ropeoverlay">D</span><img
+															src="images/ropes/rope_d.jpg" width="470" height="60"
+															alt="rope j" /></a></li>
+												<li id="prop4" class="rope-state-highlight"><input type="hidden"
+														name="byob_prop2" value="Rope:E" /><a href="#"
+														onclick="changeidclass('ropetable','E'); insertresult('prop1','rope-result','byob_prop1','Rope:E'); return false;"><span
+															class="ropeoverlay">E</span><img
+															src="images/ropes/rope_e.jpg" width="470" height="60"
+															alt="rope e" /></a></li>
+											</ul>
+										</div>
+									</div>
+									<div id="beadwrapper">
+										<h4 class="beadheader"><span class="byob-fullscreen">2</span><span
+												class="byob-mobile">3</span>. Select and Drag beads onto Rope</h4>
+										<ul id="choicetable" class="chooser">
+											<li id="draggable467" class="bead-state-highlight" style="width:43px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead55:Fish+!25.00" /><img src="images/beads/1-bead_55.png"
+													alt="Beads" border="0" width="43" height="60" /><span
+													class="sku_Title">Fish</span>
+											</li>
+											<li id="draggable468" class="bead-state-highlight" style="width:44px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead53:Heart+!25.00" /><img src="images/beads/2-bead_53.png"
+													alt="Beads" border="0" width="44" height="60" /><span
+													class="sku_Title">Heart</span>
+											</li>
+											<li id="draggable469" class="bead-state-highlight" style="width:44px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead50:Star+!25.00" /><img src="images/beads/4-bead_50.png"
+													alt="Beads" border="0" width="44" height="60" /><span
+													class="sku_Title">Star</span>
+											</li>
+											<li id="draggable470" class="bead-state-highlight" style="width:40px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead68:Sun and Moon+!25.00" /><img
+													src="images/beads/3-bead_68.png" alt="Beads" border="0" width="40"
+													height="60" /><span class="sku_Title">Sun and Moon</span>
+											</li>
+											<li id="draggable472" class="bead-state-highlight" style="width:40px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead47:Hand+!25.00" /><img src="images/beads/10-bead_47.png"
+													alt="Beads" border="0" width="40" height="60" /><span
+													class="sku_Title">Hand</span>
+											</li>
+											<li id="draggable473" class="bead-state-highlight" style="width:109px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead61:Loose Snake+!42.00" /><img
+													src="images/beads/11-bead_loose_snake.png" alt="Beads" border="0"
+													width="109" height="58" /><span class="sku_Title">Loose
+													Snake</span>
+											</li>
+											<li id="draggable474" class="bead-state-highlight" style="width:45px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead91:Triangle+!25.00" /><img
+													src="images/beads/12-bead_91.png" alt="Beads" border="0" width="45"
+													height="60" /><span class="sku_Title">Triangle</span>
+											</li>
+											<li id="draggable475" class="bead-state-highlight" style="width:43px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead57:Serpent+!25.00" /><img
+													src="images/beads/13-bead_57.png" alt="Beads" border="0" width="43"
+													height="60" /><span class="sku_Title">Serpent</span>
+											</li>
+											<li id="draggable476" class="bead-state-highlight" style="width:49px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead58:Dog and Bone+!25.00" /><img
+													src="images/beads/14-bead_58.png" alt="Beads" border="0" width="49"
+													height="60" /><span class="sku_Title">Dog and Bone</span>
+											</li>
+											<li id="draggable477" class="bead-state-highlight" style="width:43px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead56:Bone+!25.00" /><img src="images/beads/15-bead_56.png"
+													alt="Beads" border="0" width="43" height="60" /><span
+													class="sku_Title">Bone</span>
+											</li>
+											<li id="draggable478" class="bead-state-highlight" style="width:62px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead60:Tight Snake+!42.00" /><img
+													src="images/beads/16-bead_60.png" alt="Beads" border="0" width="62"
+													height="60" /><span class="sku_Title">Tight Snake</span>
+											</li>
+											<li id="draggable479" class="bead-state-highlight" style="width:41px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead48:Zia+!25.00" /><img src="images/beads/17-bead_48.png"
+													alt="Beads" border="0" width="41" height="60" /><span
+													class="sku_Title">Zia</span>
+											</li>
+											<li id="draggable481" class="bead-state-highlight" style="width:37px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead92:Flower+!25.00" /><img
+													src="images/beads/18-bead_92.png" alt="Beads" border="0" width="37"
+													height="60" /><span class="sku_Title">Flower</span>
+											</li>
+											<li id="draggable482" class="bead-state-highlight" style="width:21px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead95:Small Circle+!25.00" /><img
+													src="images/beads/19-bead_95.png" alt="Beads" border="0" width="21"
+													height="60" /><span class="sku_Title">Small Circle</span>
+											</li>
+											<li id="draggable483" class="bead-state-highlight" style="width:25px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead59:Cheerio+!25.00" /><img
+													src="images/beads/20-bead_59.png" alt="Beads" border="0" width="25"
+													height="60" /><span class="sku_Title">Cheerio</span>
+											</li>
+											<li id="draggable484" class="bead-state-highlight" style="width:70px;">
+												<input type="hidden" class="choice" name="byob_prop1"
+													value="bead132:RG Bead+!25.00" /><img
+													src="images/beads/9-bead_132.png" alt="Beads" border="0" width="39"
+													height="60" /><span class="sku_Title">RG Bead</span>
+											</li>
+										</ul>
+									</div>
+									<span class="bewteen-bead-and-wristwrappers"></span>
+									<form action="https://pyblog/cart/" method="post">
+										<div id="wristwrapper">
+											<h4 class="wristheader">4. Choose Bracelet Size</h4>
+											Sizing: measure wrist + 1.5 inches.<br />
+											<select name="byob_prop3">
+												<option value="Wrist:6.25">6.25</option>
+												<option value="Wrist:6.5">6.5</option>
+												<option value="Wrist:6.75">6.75</option>
+												<option value="Wrist:7">7</option>
+												<option value="Wrist:7.25">7.25</option>
+												<option value="Wrist:7.5">7.5</option>
+												<option value="Wrist:8">8</option>
+												<option value="Wrist:8.25">8.25</option>
+												<option value="Wrist:8.5">8.5</option>
+												<option value="Wrist:8.75">8.75</option>
+												<option value="Wrist:9">9</option>
+												<option value="Wrist:9.25">9.25</option>
+												<option value="Wrist:9.5">9.5</option>
+												<option value="Wrist:9.75">9.75</option>
+												<option value="Wrist:10.00">10.00</option>
+											</select>
+										</div>
+										<input type="hidden" name="merchant" value="pyblog" />
+										<input type="hidden" name="byob_name" value="Build Your Own Bracelet" />
+										<input id="byob_price" type="hidden" name="byob_price" value="150.00" />
+										<input type="hidden" name="byob_quant" value="1" />
+										<input type="hidden" name="byob_prop1" id="byob_prop1" value="" />
+										<input type="hidden" name="byob_prop2" id="byob_prop2" value="" />
+										<input type="hidden" name="byob_prop4" id="byob_prop4" value="" />
+									</form>
+									<span class="bewteen-bead-and-wristwrappers"></span>
+									<div id="wristwrapper">
+										<div id="showpricebottom">$25.00</div>
+										<div id="buynow">
+											<input type="submit" name="add" value="buy" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="content-bottom-wrapper" class="clear">
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="shadowbottom">
+						<div class="shadowbottomleft"></div>
+						<div class="shadowbottomright"></div>
+					</div>
+				</div>
+				<div id="rightsidebar">
+				</div>
+			</div>
+		</div>
+		<hr class="hide" />
+		<div id="footer-top">
+		</div>
+		<script src="js/jquery.tools.min.js" type="text/javascript"></script>
+		<script defer language="javascript" type="text/javascript">
+			$(".tip").tooltip({ offset: [10, 5], effect: 'slide' });
+			$.easing.custom = function (x, t, b, c, d) {
+				var s = 0;
+				if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
+				return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+			}
+		</script>
+		<script defer type="text/javascript">
+			var stx = stx || {};
+			stx.searchbar = (function () {
+				var searchtext = 'Search';
+				var searchElement;
+				var searchButton;
+				function _setText() {
+					var currentText = searchElement.val();
+					if (currentText == '') {
+						searchElement.val(searchtext);
+					}
+				}
+				function _clearText() {
+					var currentText = searchElement.val();
+					if (currentText == searchtext) {
+						searchElement.val('');
+					}
+				}
+				function init() {
+					searchButton = $('.search-button');
+					searchElement = $('.search-text');
+					if (searchElement.val() != '') { searchtext = searchElement.val(); }
+					searchElement.val(searchtext).on('focusin', function () {
+						_clearText();
+					}).on('focusout', function () {
+						_setText();
+					});
+					searchButton.on('click', function () {
+						_clearText();
+					});
+				}
+				return {
+					init: init
+				};
+			})();
+			stx.searchbar.init();
+		</script>
+		<script defer type="text/javascript">
+			; (function ($, window, undefined) {
+				$.fn.stxExpandable = function (options) {
+					var defaults = {
+						expandText: "+",
+						collapseText: "-"
+					};
+					var expanderTrigger = '<a class="expandTrigger" href="#">EXPANDTEXT</a>';
+					var settings = $.extend({}, defaults, options);
+					this.each(function () {
+						var $container = $(this);
+						var newElement = expanderTrigger.replace('EXPANDTEXT', settings.expandText);
+						if ($.fn.stxExpandable.overflown($container)) {
+							$container.prepend(newElement);
+							$container.find('.expandTrigger').on('click', function () {
+								var $trigger = $(this);
+								var expanderDiv = $trigger.closest('div');
+								if (expanderDiv.hasClass('collapsed') || !expanderDiv.hasClass('expanded')) {
+									expanderDiv.removeClass('collapsed').addClass('expanded');
+									$trigger.text(settings.collapseText);
+								} else {
+									expanderDiv.removeClass('expanded').addClass('collapsed');
+									$trigger.text(settings.expandText);
+								}
+								return false;
+							});
+						}
+					});
+					return this;
+				};
+				$.fn.stxExpandable.overflown = function (e) {
+					var e = e[0];
+					return e.scrollHeight > e.clientHeight || e.scrollWidth > e.clientWidth;
+				};
+			}(jQuery, window));
+		</script>
+		<script defer type="text/javascript">
+			var containers = new Array();
+			$(document).ready(function () {
+				var isAndroid = navigator.userAgent.toLowerCase().indexOf("android");
+				resetCanvasWidth('reset');
+			});
+			$(window).load(function () {
+				$(window).on('resize', function () {
+					resetCanvasWidth();
+				});
+			});
+			function resetCanvasWidth(doonce) {
+				var screenheight = getScreenHeight();
+				var screenwidth = (getScreenWidth() + 2);
+				$('.respond').each(function () {
+					var x = $(this);
+					if (x.hasClass('scale-h')) {
+						setNewHeight("#" + this.id);
+					}
+					var papi;
+					var papid;
+					if (x.hasClass('scrollablewrapper')) {
+						papi = x.find(".scrollable");
+						papid = papi.attr('id');
+					}
+					if (papid) {
+						var pw = papi.innerWidth();
+						papi.find(".scrollable-column").css("width", pw);
+						var scrollableapi = $("#" + papid).data("scrollable");
+						if (scrollableapi) {
+							var scrollpanel = scrollableapi.getIndex();
+							scrollpanel = (scrollpanel);
+							var scrolldiff = ((scrollpanel * pw) * -1);
+							papi.find('.scrollh').css('left', scrolldiff + 'px');
+						}
+					}
+				});
+			}
+			function setNewHeight(el) {
+				var owidth;
+				var oheight;
+				if (typeof containers[el] != 'undefined') {
+					owidth = containers[el].owidth;
+					oheight = containers[el].oheight;
+				} else {
+					owidth = ($(el).attr('width')) ? ($(el).attr('width')) : '';
+					oheight = ($(el).attr('height')) ? ($(el).attr('height')) : '';
+					if (!owidth) {
+						owidth = ($(el).css('max-width')) ? (parseInt($(el).css('max-width'))) : ($(el).outerWidth());
+					}
+					if (!oheight) {
+						oheight = ($(el).css('max-height')) ? (parseInt($(el).css('max-height'))) : ($(el).outerHeight());
+					}
+					containers[el] = ({ 'owidth': owidth, 'oheight': oheight });
+				}
+				var cowidth = $(el).outerWidth();
+				var cwidth = $(el).innerWidth();
+				var nheight = ((cwidth * oheight) / owidth);
+				if (nheight > oheight) {
+					$(el).css({ 'height': oheight + 'px', 'max-height': oheight + 'px' });
+				} else if (cwidth < owidth) {
+					$(el).css({ 'height': nheight + 'px', 'max-height': nheight + 'px' });
+				} else {
+					$(el).css({ 'height': oheight + 'px', 'max-height': oheight + 'px' });
+				}
+			}
+			function getScreenHeight() {
+				if (window.innerHeight) return window.innerHeight;
+				else if (document.documentElement.clientHeight) return document.documentElement.clientHeight;
+				else if (window.clientHeight) return window.clientHeight;
+				else if (document.body.clientHeight) return document.body.clientHeight;
+				else return 0;
+			}
+			function getScreenWidth() {
+				if (window.innerWidth) return window.innerWidth;
+				else if (document.documentElement.clientWidth) return document.documentElement.clientWidth;
+				else if (window.clientWidth) return window.clientWidth;
+				else if (document.body.clientWidth) return document.body.clientWidth;
+				else return 0;
+			}
+			var currentdiv = "";
+			function scrollto(whichdiv) {
+				var curContent = $('#content').find("#" + whichdiv);
+				if (curContent.length > 0)
+					$('html, body').animate({
+						scrollTop: curContent.offset().top - 60
+					}, 800);
+				currentdiv = whichdiv;
+			}
+			function scrolltocurrent() {
+				if (!currentdiv) { return }
+				var curContent = $('#content').find("#" + currentdiv);
+				if (curContent.length > 0)
+					$('html, body').animate({
+						scrollTop: curContent.offset().top
+					}, 1);
+			}
+		</script>
+		<script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function () {
+				$(function () {
+					$('.menui').slicknav({
+						prependTo: '.menu',
+						closeOnClick: false,
+						allowParentLinks: true,
+						label: 'MENU',
+						open: function (trigger) {
+							var that = trigger.parent().children('ul');
+							$('.slicknav_menu ul li.slicknav_open ul').each(function () {
+								if ($(this).get(0) != that.get(0)) {
+									$(this).slideUp().addClass('slicknav_hidden');
+									$(this).parent().removeClass('slicknav_open').addClass('slicknav_collapsed');
+								}
+							})
+						}
+					});
+				});
+			});
+		</script>
+		<script defer type="text/javascript">
+			var stx = stx || {};
+			stx.searchbar = (function () {
+				var searchtext = 'Search';
+				var searchElement;
+				var searchButton;
+				function _setText() {
+					var currentText = searchElement.val();
+					if (currentText == '') {
+						searchElement.val(searchtext);
+					}
+				}
+				function _clearText() {
+					var currentText = searchElement.val();
+					if (currentText == searchtext) {
+						searchElement.val('');
+					}
+				}
+				function init() {
+					searchElement = $('.search-text');
+					searchButton = $('.search-button');
+					searchElement.val(searchtext).on('focusin', function () {
+						_clearText();
+					}).on('focusout', function () {
+						_setText();
+					});
+					searchButton.on('click', function () {
+						_clearText();
+					});
+				}
+				return {
+					init: init
+				};
+			})();
+			stx.searchbar.init();
+		</script>
+	</div>
+	<script defer type="text/javascript" src="js/ui/ui.core.js"></script>
+	<script defer type="text/javascript" src="js/ui/ui.draggable.js"></script>
+	<script defer type="text/javascript" src="js/ui/ui.sortable.js"></script>
+	<script defer type="text/javascript" src="js/ui/ui.droppable.js"></script>
+	<script defer type="text/javascript" src="js/jquery.simulate.js"></script>
+	<script defer type="text/javascript">
+		var isMobile = false;
+		$(document).ready(function () {
+			var mobileCheck = window.matchMedia("only screen and (max-width: 800px)");
+			var isIPadPro = /Macintosh/.test(navigator.userAgent) && 'ontouchend' in document;
+			if (mobileCheck.matches) {
+				isMobile = true;
+			}
+			if (isIPadPro) {
+				isMobile = true;
+			}
+		});
+		$(function () {
+			var $sortable = $('#sortable');
+			var $choicetable = $('#choicetable');
+			var $ropetable = $('#ropetable');
+			var $clasptable = $('#clasptable');
+			$("#sortable").sortable({
+				revert: 'disable',
+				scope: 'beads',
+				stop: function () {
+					var result = $("#select-result").empty();
+					var hiddenresult = "";
+					var pricevalue = 0;
+					var counter = 0;
+					$("input#byob_prop4").val('');
+					$(".bead-state-highlight", this).each(function (idx, item) {
+						var index = $("#sortable li").index(this);
+						if (item.style.display != 'none') {
+							result.append(" #" + (index + 1) + " - " + (item.innerHTML));
+						}
+					});
+					$("#select-result .choice").each(function () {
+						let slength = $("#select-result .choice").length;
+						var pieces = $(this).val().split('+!');
+						if (!pieces[1]) { pieces[1] = 0 }
+						if (pieces[1] <= 25 && counter < 3) {
+							counter += 1;
+							hiddenresult += pieces[0] + "\n";
+							console.log("A. adding" + pieces[0] + " for " + pieces[1] + " and counter of " + counter + " of " + slength);
+						} else if (pieces[1] <= 42 && slength < 2) {
+							counter += 1;
+							hiddenresult += pieces[0] + "\n";
+							console.log("B. adding" + pieces[0] + " for " + pieces[1] + " and counter of " + counter + " of " + slength);
+						} else {
+							pricevalue += parseFloat(pieces[1]);
+							hiddenresult += $(this).val() + "\n";
+							console.log("C. adding" + pieces[0] + " for " + pieces[1] + " and counter of " + counter + " of " + slength);
+						}
+					});
+					hiddenresult = rtrim(hiddenresult);
+					$("input#byob_prop4").val(hiddenresult);
+					var price = document.getElementById('byob_price').value;
+					pricevalue += parseFloat(price);
+					pricevalue += ".00";
+					document.getElementById('showpricetop').innerHTML = pricevalue;
+					document.getElementById('showpricebottom').innerHTML = pricevalue;
+				}
+			});
+			$("#ropetable").sortable({
+				revert: 'disable',
+				scope: 'rope',
+				stop: function () {
+					var result = $("#rope-result").empty();
+					$(".ui-state-highlight", this).each(function (idx, item) {
+						if (item.style.display != 'none') {
+							result.append(" ," + (item.innerHTML));
+						}
+					});
+				}
+			});
+			$("#clasptable").sortable({
+				revert: 'disable',
+				scope: 'clasps',
+				stop: function () {
+					var result = $("#clasp-result").empty();
+					$(".clasp-state-highlight", this).each(function (idx, item) {
+						if (item.style.display != 'none') {
+							result.append(" ," + (item.innerHTML));
+						}
+					});
+				}
+			});
+			$('#choicetable li').draggable({
+				connectToSortable: '#sortable',
+				helper: 'clone',
+				revert: 'invalid'
+			});
+			if (isMobile) {
+				$('#choicetable li').on("click", function () {
+					trigger_drop(this);
+					var element = document.getElementById("collector");
+					element.scrollIntoView();
+				});
+			}
+			$("#ropechoice li").draggable({
+				connectToSortable: '#ropetable',
+				helper: 'clone',
+				revert: 'invalid'
+			});
+			$("#claspchoice li").draggable({
+				connectToSortable: '#clasptable',
+				helper: 'clone',
+				revert: 'invalid'
+			});
+			$clasptable.droppable({
+				activeClass: 'ui-draggable',
+				addClasses: true,
+				greedy: false,
+				hoverClass: 'dropnow',
+				scope: 'clasps',
+				tolerance: 'pointer',
+				over: function (ev, ui) {
+					activeClass: 'dropnow'
+				},
+				out: function (ev, ui) {
+					deleteImage(ui.draggable);
+				},
+				stop: function () {
+					var result = $("#select-result").empty();
+					$(".ui-state-highlight", this).each(function () {
+						var index = $("#selectable li").index(this);
+						result.append(" #" + (index + 1));
+					});
+				}
+			});
+			$sortable.droppable({
+				activeClass: 'ui-draggable',
+				addClasses: true,
+				greedy: false,
+				hoverClass: false,
+				scope: 'beads',
+				tolerance: 'pointer',
+				drop: function (ev, ui) {
+					if (isMobile) {
+						var $item = ui.draggable;
+						$item.on("click", function () {
+							deleteImage($item);
+							var result = $("#select-result").empty();
+							var hiddenresult = "";
+							var pricevalue = 0;
+							var counter = 0;
+							$("input#byob_prop4").val('');
+							$(".bead-state-highlight", $item[0]).each(function (idx, item) {
+								var index = $("#sortable li").index(this);
+								if (item.style.display != 'none') {
+									result.append(" #" + (index + 1) + " - " + (item.innerHTML));
+								}
+							});
+							$("#select-result .choice").each(function () {
+								var pieces = $(this).val().split('+!');
+								if (!pieces[1]) { pieces[1] = 0 }
+								if (pieces[1] <= 25 && counter < 3) {
+									counter += 1;
+									hiddenresult += pieces[0] + "\n";
+								} else {
+									pricevalue += parseFloat(pieces[1]);
+									hiddenresult += $(this).val() + "\n";
+								}
+							});
+							hiddenresult = rtrim(hiddenresult);
+							$("input#byob_prop4").val(hiddenresult);
+							var price = document.getElementById('byob_price').value;
+							pricevalue += parseFloat(price);
+							pricevalue += ".00";
+							document.getElementById('showpricetop').innerHTML = pricevalue;
+							document.getElementById('showpricebottom').innerHTML = pricevalue;
+						});
+					}
+				},
+				out: function (ev, ui) {
+					deleteImage(ui.draggable);
+				},
+				stop: function () {
+					var result = $("#select-result").empty();
+					$(".ui-state-highlight", this).each(function () {
+						var index = $("#selectable li").index(this);
+						result.append(" #" + (index + 1));
+					});
+				}
+			});
+			$ropetable.droppable({
+				activeClass: 'ui-draggable',
+				addClasses: true,
+				greedy: true,
+				hoverClass: false,
+				scope: 'rope',
+				tolerance: 'pointer',
+				out: function (ev, ui) {
+					deleteImage(ui.draggable);
+				},
+				stop: function () {
+					var result = $("#select-result").empty();
+					$(".ui-state-highlight", this).each(function () {
+						var index = $("#selectable li").index(this);
+						result.append(" #" + (index + 1));
+					});
+				}
+			});
+			function deleteImage($item) {
+				$item.fadeOut(function () {
+					$item.find('ui-state-highlight').remove();
+				});
+			}
+			function rtrim(str) {
+				return str.replace(/\s+$/, '');
+			}
+			function trigger_drop(item) {
+				var draggable = $(item).draggable(),
+					droppableOffset = $sortable.offset(),
+					draggableOffset = draggable.offset(),
+					dx = droppableOffset.left - draggableOffset.left,
+					dy = droppableOffset.top - draggableOffset.top;
+				draggable.simulate("drag", {
+					dx: dx,
+					dy: dy
+				});
+			}
+		});
+	</script>
+	<script defer language="javascript" type="text/javascript">
+		function changeidclass(id, newclass) {
+			if (document.getElementById(id)) {
+				var myobj = document.getElementById(id);
+				myobj.className = newclass;
+			}
+		}
+		function insertresult(item, into, property, propvalue) {
+			var content = document.getElementById(item);
+			var results = document.getElementById(into);
+			document.getElementById(into).innerHTML = content.innerHTML;
+			$("input#" + property).val(propvalue);
+		}
+	</script>
+</body>
+
+</html>
