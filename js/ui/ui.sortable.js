@@ -597,6 +597,8 @@
 							.removeClass("ui-sortable-helper")[0];
 
 						if (!className)
+							el.style.margin = "0px";
+							el.style.padding = "0px";
 							el.style.visibility = "hidden";
 
 						return el;

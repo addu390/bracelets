@@ -2158,7 +2158,7 @@ ul.B {
 }
 
 ul.C {
-    background: url(../images/ropes/rope_c.jpg) top left no-repeat;
+    background: url(../images/ropes/rope_d.jpg) top left no-repeat;
 }
 
 ul.D {
@@ -2175,7 +2175,7 @@ ul li:hover {
 
 ul#ropechoice li {
     border: 0px solid;
-    height: 40px;
+    height: 50px;
     overflow: hidden;
     width: 100px;
 }
@@ -2197,7 +2197,7 @@ ul#clasptableleft {
     position: absolute;
     left: 0px;
     text-align: left;
-    top: 11px;
+    top: 18px;
     z-index: 2;
 }
 
@@ -2209,33 +2209,38 @@ ul#clasptable {
     position: absolute;
     right: 0px;
     text-align: left;
-    top: 12px;
+    top: 18px;
     z-index: 2;
 }
 
 ul.hookclasp {
     background: url(../images/hooks/Hook_clasp_right.png) top left no-repeat;
+    background-size: 60px 50px;
 }
 
 ul.hookclaspleft {
     background: #fff url(../images/hooks/Hook_clasp_left.png) top right no-repeat;
-    border: 5px solid;
+    background-size: 60px 50px;
 }
 
 ul.tclasp {
     background: url(../images/hooks/T-Clasp_right.png) top left no-repeat;
+    background-size: 60px 50px;
 }
 
 ul.tclaspleft {
     background: url(../images/hooks/T-Clasp_left.png) top right no-repeat;
+    background-size: 60px 50px;
 }
 
 ul.coilclasp {
     background: url(../images/hooks/Coil_clasp_right.png) top left no-repeat;
+    background-size: 70px 50px;
 }
 
 ul.coilclaspleft {
     background: url(../images/hooks/Coil_clasp_left.png) top right no-repeat;
+    background-size: 55px 50px;
 }
 
 ul#clasptable li {
@@ -2266,8 +2271,9 @@ ul#sortable {
 }
 
 ul#sortable li {
-    float: left;
-    margin: 0px 3px;
+    /* float: left; */
+    display: inline-block;
+    margin: 10px 0px;
     text-align: center;
     border: 0px solid red;
     background: transparent;
